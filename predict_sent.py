@@ -21,7 +21,7 @@ def predictor(string):
     coba_seq = tokenizer.texts_to_sequences(coba_tes)
     coba_pad = pad_sequences(coba_seq, maxlen=max_length)
     pred = sentiment_model.predict(coba_pad)
-    if (pred==0):
+    if (np.round(pred)==0):
         return("Negatif")
     else:
         return ("Positif")
