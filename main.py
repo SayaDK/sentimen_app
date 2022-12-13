@@ -9,4 +9,4 @@ if st.button('Mulai Analisis'):
         st.error('Cek kembali teks ulasan', icon="🚨")
     else:
         sentimen = prediction.predictor(text)
-        st.write("sentimen "+sentimen)
+        st.write("Sentimen "+sentimen)
